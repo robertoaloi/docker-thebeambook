@@ -3,9 +3,10 @@ FROM debian:jessie
 MAINTAINER Roberto Aloi
 
 RUN apt-get update  -y &&         \
-    apt-get install -y make       \
+    apt-get install -y asciidoc   \
                        erlang     \
-                       asciidoc   \
+                       git        \
+                       make       \
                        python-pip
 
 RUN easy_install dblatex
