@@ -5,7 +5,8 @@ MAINTAINER Roberto Aloi
 RUN apt-get update  -y &&         \
     apt-get install -y make       \
                        erlang     \
-                       asciidoc
+                       asciidoc   \
+                       python-pip
 
 RUN easy_install dblatex
 
