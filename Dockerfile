@@ -8,7 +8,7 @@ RUN apt-get update  -y &&               \
                        git              \
                        make             \
                        python-cairo     \
-                       python-gdk2      \
+                       python-gtk2      \
                        python-pip       \
                        python-yaml      \
                        source-highlight \
