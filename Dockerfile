@@ -2,15 +2,16 @@ FROM debian:jessie
 
 MAINTAINER Roberto Aloi
 
-RUN apt-get update  -y &&           \
-    apt-get install -y asciidoc     \
-                       erlang       \
-                       git          \
-                       make         \
-                       python-cairo \
-                       python-gdk2  \
-                       python-pip   \
-                       python-yaml  \
+RUN apt-get update  -y &&               \
+    apt-get install -y asciidoc         \
+                       erlang           \
+                       git              \
+                       make             \
+                       python-cairo     \
+                       python-gdk2      \
+                       python-pip       \
+                       python-yaml      \
+                       source-highlight \
                        wget
 
 RUN easy_install dblatex
