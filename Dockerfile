@@ -4,6 +4,7 @@ MAINTAINER Roberto Aloi
 
 RUN apt-get update  -y &&               \
     apt-get install -y asciidoc         \
+                       asciidoctor      \
                        erlang           \
                        git              \
                        make             \
@@ -21,5 +22,7 @@ RUN cd /opt/ &&                                               \
     cd shaape &&                                              \
     make install &&                                           \
     make install-filter
+
+RUN gem install asciidoctor-diagram
 
 WORKDIR /book
