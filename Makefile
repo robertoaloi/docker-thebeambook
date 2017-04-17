@@ -1,5 +1,5 @@
 IMAGE    = robertoaloi/docker-thebeambook
-VERSION  = 1.0.0
+VERSION  = 1.1.0
 
 # Only use sudo when necessary
 DOCKER=$(shell docker info >/dev/null 2>&1 && echo "docker" || echo "sudo docker")
