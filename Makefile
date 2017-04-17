@@ -10,7 +10,7 @@ build:
 	$(DOCKER) build $(build_opts) --pull=true -t $(IMAGE):$(VERSION) ./
 
 latest: build
-	$(DOCKER) tag -f $(IMAGE):$(VERSION) $(IMAGE):latest
+	$(DOCKER) tag $(IMAGE):$(VERSION) $(IMAGE):latest
 
 push:
 	$(DOCKER) push $(IMAGE):$(VERSION)
